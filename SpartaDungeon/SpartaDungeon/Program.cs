@@ -406,6 +406,8 @@ namespace SpartaDungeon
                         case 3:
                             HardDongeo(player);
                             break;
+                        case 0:
+                            return;
                         default:
                             Console.WriteLine("올바른 숫자를 입력하세요.");
                             break;
@@ -434,7 +436,7 @@ namespace SpartaDungeon
                 ConditionsLack(player, 5);
             }
 
-            Console.WriteLine("\n엔터를 누르면 마을 화면으로 갑니다.");
+            Console.WriteLine("\n엔터를 누르면 던전 선택으로 갑니다.");
             Console.ReadLine();
         }
 
@@ -453,7 +455,7 @@ namespace SpartaDungeon
                 ConditionsLack(player, 11);
             }
 
-            Console.WriteLine("\n엔터를 누르면 마을 화면으로 갑니다.");
+            Console.WriteLine("\n엔터를 누르면 던전 선택으로 갑니다.");
             Console.ReadLine();
         }
 
@@ -472,7 +474,7 @@ namespace SpartaDungeon
                 ConditionsLack(player, 17);
             }
 
-            Console.WriteLine("\n엔터를 누르면 마을 화면으로 갑니다.");
+            Console.WriteLine("\n엔터를 누르면 던전 선택으로 갑니다.");
             Console.ReadLine();
         }
 

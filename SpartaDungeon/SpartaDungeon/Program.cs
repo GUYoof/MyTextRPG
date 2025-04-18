@@ -482,7 +482,7 @@ namespace SpartaDungeon
         {
             Console.WriteLine("\n던전 클리어");
             Console.WriteLine("축하합니다!!");
-            Console.WriteLine("쉬운 던전을 클리어 하였습니다.");
+            Console.WriteLine("던전을 클리어 하였습니다.");
             Console.WriteLine("\n[탐험 결과]");
 
             int defenseCorrectionValue = player.GetTotalDefense() - requiredDefense;
@@ -521,7 +521,7 @@ namespace SpartaDungeon
 
         public void ConditionsLack (Player player, int requiredDefense)
         {
-            Console.WriteLine("방어력이 부족하여 던전 탐험이 실패 할 수 있습니다.");
+            Console.WriteLine("\n방어력이 부족하여 던전 탐험이 실패 할 수 있습니다.");
 
             Random rand = new Random();
             int chance = rand.Next(0, 101);
@@ -546,7 +546,7 @@ namespace SpartaDungeon
             }
             else
             {
-                Console.WriteLine("운좋게 던전을 클리어했습니다!");
+                Console.WriteLine("\n운좋게 던전을 클리어했습니다!");
                 DungeonClear(player, 5, 1000); // 난이도별 값 전달
             }
         }

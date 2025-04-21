@@ -132,12 +132,12 @@ namespace SpartaDungeon
                 Console.WriteLine("\n원하는 행동을 입력해주세요.");
                 string select = Console.ReadLine();
 
-                if (int.TryParse(select, out int Difficulty))
-                    if (select == "0")
+                if (int.TryParse(select, out int menuChoice))
+                    if (menuChoice == 0)
                     {
                         return; // 인벤토리 종료
                     }
-                    else if (select == "1")
+                    else if (menuChoice == 1)
                     {
                         ProcessedEquipment();
                     }
